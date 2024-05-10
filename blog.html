@@ -1,521 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-
+<head>
+    <meta charset="utf-8">    
     <title>Ferrari</title>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <meta name="HandheldFriendly" content="true" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-
+    <meta name="description" content="Descrição da página">
+    <meta name="author" content="">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
     <!-- Import CSS -->
-    <link rel="stylesheet" href="css/base.css" />
-
+    <link rel="stylesheet" href="css/base.css">
+        
     <!-- Hero Causel CSS -->
-    <link rel="stylesheet" href="css/jquery.heroCarousel.css" />
-
+    <link rel="stylesheet" href="css/jquery.heroCarousel.css">
+    
     <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
+<body>
+
     <!-- Start Header -->
     <header>
-      <div class="container">
-        <div class="row">
-          <div class="span5">
-            <div id="logo">
-              <a href="index.html"
-                ><img
-                  src="img/clients/logo1.png"
-                  alt="Logo da Ferrari"
-                  style="width: 75px; height: 50px"
-                />Ferrari</a
-              >
+        <div class="container">
+            <div class="row">
+                <div class="span5">
+                    <div id="logo">
+                        <a href="index.html"><img src="img/clients/logo1.png" alt="Logo da Ferrari" style="width: 75px; height: 50px;">Ferrari</a>                        
+                    </div>                    
+                </div>
+                <div class="span7">
+                    <!-- Start Navigation -->
+                    <nav>
+                        <ul id="navigation" class="pull-right hidden-phone">
+                            <li>
+                                <a href="index.html">Home</a>                                
+                            </li>
+                            <li>
+                                <a href="about.html">Sobre</a>                                
+                            </li>
+                            <li>
+                                <a class="active" href="blog.html">Historia</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html">Videos</a>
+                            </li>                            
+                            <li>
+                                <a href="contact.html">Contato</a>
+                            </li>                            
+                        </ul>
+                    </nav>
+                    <!-- End Navigation -->
+                </div>
             </div>
-          </div>
-          <div class="span7">
-            <!-- Start Navigation -->
-            <nav>
-              <ul id="navigation" class="pull-right hidden-phone">
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="about.html">Sobre</a>
-                </li>
-                <li>
-                  <a class="active" href="blog.html">Historia</a>
-                </li>
-                <li>
-                  <a href="portfolio.html">Videos</a>
-                </li>
-                <li>
-                  <a href="contact.html">Contato</a>
-                </li>
-              </ul>
-            </nav>
-            <!-- End Navigation -->
-          </div>
         </div>
-      </div>
     </header>
     <!-- End Header -->
 
-    <!-- Start Title -->
-    <section id="page-title" class="container">
-      <div class="row">
-        <div class="span10">
-          <h2>Blog</h2>
-          <div class="dropdown">
-            <div class="dropmenu">
-              <p class="menu-title">Tags</p>
-              <p class="selected">All tags</p>
-              <i class="icon-chevron-down"></i>
-            </div>
-            <div class="dropmenu-active">
-              <ul class="option-set" data-option-key="filter">
-                <li><a class="drop-selected" href="#">All tags</a></li>
-                <li><a href="#">Office</a></li>
-                <li><a href="#">Website</a></li>
-                <li><a href="#">Strategy</a></li>
-                <li><a href="#">London</a></li>
-                <li><a href="#">Conference</a></li>
-                <li><a href="#">Internet</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Future</a></li>
-                <li><a href="#">Lifestyle</a></li>
-              </ul>
-            </div>
-          </div>
+    <!-- Start Hero Carousel -->
+    <section class="hero">
+        <div class="hero-carousel">
+            <article>
+                <img class="slider-image" src="img/historyimgs/Enzo-Ferrari.jpeg" alt="slide 1" />
+                <div class="contents">
+                    <h4 class="color-text">Enzo Ferreari</h4>
+                    <p>Piloto e Dono de uma das maiores fabricantes de carros! </p>
+                </div>
+            </article>
+            <article>
+                <img class="slider-image" src="img/historyimgs/Despedida-Enzo.jpeg" alt="slide 2" />
+                <div class="contents">
+                    <h4 class="color-text">Despedida de Enzo Ferrari</h4>
+                    <p>Em 1988, Enzo Ferrari, o fundador da empresa, faleceu aos 90 anos.</p>
+                </div>
+            </article>
+            <article>
+                <img class="slider-image" src="img/historyimgs/Formula-01.jpeg" alt="slide 3" />
+                <div class="contents">
+                    <h4 class="color-text">O legado construído na Fórmula 1</h4>
+                    <p>Em 1951, já consolidada no mercado e no automobilismo, a Ferrari conseguiu sua primeira vitória na Fórmula 1.</p>
+                </div>
+            </article>
         </div>
-        <div class="span2 hidden-phone">
-          <p><span class="number">27</span>posts</p>
-        </div>
-      </div>
-      <div class="row">
-        <hr class="span12 clear-bottom" />
-      </div>
     </section>
-    <!-- End Title -->
+	<!-- End Hero Carousel -->
+	
+	<!-- Start Intro Block -->
+  <section class="blog-post container">  
+    <div class="row">
+        <div class="span4">
+          <br>      
+            <img src="img/historyimgs/Enzo-Ferrari.jpeg" alt="EnzoJovem">
+        </div>
+        <div class="span8">
+          <h4><a href="#">A história de Enzo Ferrari</a></h4>
+            <p>A história de <a href="#">Enzo Ferrari</a>: Nascido em 18 de fevereiro de 1898, na cidade de Modena, na Itália, Enzo Anselmo Ferrari apaixonou-se pelo automobilismo logo aos dez anos de idade. Anos mais tarde, o jovem notaria a influência que a experiência no circuito de Bolonha teria em sua vida, já que o mesmo tornou-se mecânico e, posteriormente, piloto de testes. Após oferecer seus serviços à empresas como Fiat, Enzo foi dispensado e acabou indo parar na Alfa Romeo, onde conquistou alguns prêmios como piloto automobilístico. Porém, após o nascimento de seu filho, em 1932, Ferrari decidiu aposentar-se das pistas e dedicar-se exclusivamente ao desenvolvimento de carros de corrida. Contudo, um pouco antes disso, já em 1929, nascia em Maranello, na Itália, a Scuderia Ferrari.</p>
+        </div>
+    </div>   
+    <br> 
+    <div class="row">
+        <div class="span8">
+          <h4><a href="#">A história da Ferrari</a></h4>
+            <p>Scuderia Ferrari, hoje apenas Ferrari, é a marca e equipe de corrida mais antiga e bem sucedida da modernidade. Além disso, seus carros são vistos como símbolo de velocidade, luxo e riqueza. O empenho de seu fundador, Enzo Ferrari, em aliar sua experiência como piloto à engenharia aprendida quando mecânico, revolucionou para sempre a indústria automobilística.
+              Embora inicialmente a montadora apenas patrocinasse pilotos e carros de corrida já fabricados, não demorou para que a mesma iniciasse sua produção independente. Assim, através da Ferrari 125S, a empresa apresentou o motor V12 ao mundo, tornando-se um orgulho nacional e um dos maiores símbolos italianos.
+              Enzo e sua equipe surpreenderam o mundo ao conseguirem desenvolver, em instalações precárias, um motor tão poderoso quanto o V12. Como resultado disso, juntamente com o modelo, veio a vitória no Grande Prêmio de Roma, em 1947. Contudo, o primeiro carro de rua da Ferrari, o 166 Inter, só foi lançado em 1948.</p>
+        </div>
+        <div class="span4">
+            <img src="img/historyimgs/Mecanicos-Ferrari.jpeg" alt="Mecanicos">
+        </div>
+    </div>
+    <br> 
+    <div class="row">
+      <div class="span4">
+          <img src="img/historyimgs/Formula-01.jpeg" alt="Formula-01">
+      </div>
+        <div class="span8">
+          <h4><a href="#">O legado construído na Fórmula 1</a></h4>
+            <p>Em 1951, já consolidada no mercado e no automobilismo, a Ferrari conseguiu sua primeira vitória na Fórmula 1. Cinco anos depois, em 1956, Juan Manuel Fangio, um renomado piloto argentino, conquistou a vitória do campeonato mundo a bordo de uma Ferrari, apenas a primeira das mais de cinco mil vitórias em provas automobilísticas que a sucederiam.</p>
+        </div>
+    </div>
+    <br> 
+    <div class="row">
+        <div class="span8">
+          <h4><a href="#">A história de Enzo Ferrari</a></h4>
+          <p>Assim como podemos ver acima, houve uma gradativa ascensão da Ferrari na década de 50. Todavia, não podemos dizer o mesmo dos anos 60, período no qual a marca enfrentou momentos difíceis. Em suma, devido a “conflitos internos” diversos membros da alta direção saíram da companhia.
+            Esse momento de tensão deixou a empresa vulnerável e atraiu investidores. Se você assitiu Ford vs Ferrari (2019), provavelmente sabe do que estamos falando. Apesar de seus números terem caído, a marca de Maranello mantinha sua credibilidade intacta, e ainda esbanjava potencial. Por isso a concorrente estadunidense Ford chegou a fazer uma proposta pela fabricante italiana. Porém, as negociações sequer foram adiante
+            Em contrapartida, a Fiat, conterrânea da marca do cavalinho rampante, conseguiu comprar 50% da empresa em 1969. Curiosamente, até o final de 2015 esse número havia aumentado para 90% das ações. Essa operação fez com que a empresa de Maranello crescesse exponencialmente, suas fábricas expandiram-se e seus carros lideraram as vendas.
+            Porém, em 2015 a Ferrari tornou-se independente do grupo Fiat ao abrir seu capital na Bolsa de Valores.</p>
+        </div>
+        <div class="span4">
+            <img src="img/historyimgs/Anos-60.jpeg" alt="Anos-60">
+        </div>
+    </div>
+    <br> 
+    <div class="row">
+      <div class="span4">
+          <img src="img/historyimgs/Despedida-Enzo.jpeg" alt="EnzoVelho">
+      </div>
+        <div class="span8">
+          <h4><a href="#">A despedida de Enzo Ferrari</a></h4>
+            <p>Em 1988, Enzo Ferrari, o fundador da empresa, faleceu aos 90 anos. Como resultado disso, o legado ficou nas mãos de Luca Cordero di Montezemolo, antigo funcionário e amigo do empresário. Devido aos investimentos do novo presidente, a Ferrari consolidou-se na Fórmula 1 com Michael Schumacher tornou-se um grande nome na competição.</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Start Blog Post -->
-    <article class="blog-post container">
-      <div class="row">
-        <div class="span9 offset3">
-          <h4>
-            <a href="blog-detail.html"
-              >Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              Consectetur, adipisci velit...</a
-            >
-          </h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span3 post-info">
-          <div class="date">September 1st, 2012</div>
-          <div class="tags">
-            <a class="tag" href="#">digital</a>
-            <a class="tag" href="#">strategy</a>
-            <a class="tag" href="#">web</a>
-            <a class="tag" href="#">strategy</a>
-            <a class="tag" href="#">web</a>
-          </div>
-          <div class="comments"><i class="icon-comment"></i> 37 comments</div>
-          <div class="up-title hidden-phone">Share this:</div>
-          <img
-            src="img/share.png"
-            alt=""
-          /><!-- Change this image to your code of social buttons -->
-        </div>
-        <div class="span9">
-          <div class="preview-img">
-            <img src="img/slider/image3.jpg" alt="" />
-            <div class="img-caption">
-              <p>
-                Award winning digital agency. We bring a personal and effective
-                approach to every project we work on, which is why our clients
-                love us and why they keep coming back.
-              </p>
-            </div>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est
-            lectus, mattis in sodales non, congue sollicitudin ante. Vestibulum
-            ut dolor mauris, sed venenatis est. Phasellus sodales placerat nisl,
-            ut lacinia enim tincidunt vel. Mauris tempor augue a sem condimentum
-            non ullamcorper libero rhoncus.
-          </p>
-          <p>
-            Donec molestie, orci ac pharetra fermentum, ipsum quam commodo arcu,
-            non fringilla nisl ipsum vel enim. Pellentesque sagittis sagittis
-            sem. Cras pharetra tempor felis interdum fringilla. Vivamus vitae
-            dolor non magna imperdiet dictum. Pellentesque rhoncus vulputate
-            felis, nec consequat risus tristique quis. Nullam libero erat,
-            gravida nec sollicitudin non, consectetur in mauris.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est
-            lectus, mattis in sodales non, congue sollicitudin ante. Vestibulum
-            ut dolor mauris, sed venenatis est. Phasellus sodales placerat nisl,
-            ut lacinia enim tincidunt vel. Mauris tempor augue a sem condimentum
-            non ullamcorper libero rhoncus.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <hr class="span12 dotted" />
-      </div>
-    </article>
-    <!-- End Blog Post -->
+<div></div>
 
-    <!-- Start Blog Post -->
-    <article class="blog-post container">
-      <div class="row">
-        <div class="span9 offset3">
-          <h4>
-            <a href="blog-detail.html"
-              >Our favorite London office. Many photos.</a
-            >
-          </h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span3 post-info">
-          <div class="date">March 1st, 2012</div>
-          <div class="tags">
-            <a class="tag" href="#">office</a>
-            <a class="tag" href="#">photos</a>
-            <a class="tag" href="#">london</a>
-          </div>
-          <div class="comments"><i class="icon-comment"></i> 12 comments</div>
-          <div class="up-title hidden-phone">Share this:</div>
-          <img
-            src="img/share.png"
-            alt=""
-          /><!-- Change this image to your code of social buttons -->
-        </div>
-        <div class="span9">
-          <div class="preview-img">
-            <img src="img/blog/slider/image1.jpg" alt="" />
-          </div>
-          <p>
-            Ut tempus, dui vitae auctor iaculis, tellus erat tempor justo, ut
-            ultrices ante nibh adipiscing risus. Sed nec mollis purus. Nunc in
-            lacinia justo. Aliquam pretium nibh eget urna elementum rhoncus. Sed
-            sit amet sem orci. Curabitur ipsum tellus, iaculis eget imperdiet
-            sed, pretium ultrices odio. Mauris augue nisl, imperdiet at viverra
-            at, porta nec felis. Etiam lacinia vulputate scelerisque.
-          </p>
-          <p>
-            Mauris sagittis vehicula augue et rhoncus. Pellentesque rhoncus
-            posuere nulla, sit amet euismod mi auctor quis. Vestibulum ante
-            ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-            Curae; Nulla facilisi. Nullam sodales nulla non est porttitor
-            tempus. Nulla facilisi. Praesent nisi nisi, mollis et consequat in,
-            feugiat ut metus.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <hr class="span12 dotted" />
-      </div>
-    </article>
-    <!-- End Blog Post -->
-
-    <!-- Start Twitter Post -->
-    <article class="blog-post container scaleimg">
-      <div class="row">
-        <div class="span12">
-          <a href="#" class="twitter-post">
-            <span class="username">@username</span>
-            <p>
-              This week, mentions of the word “donate” is at a 180-day peak; the
-              phrase “donate blood” is at a 365-day peak.
-            </p>
-            <span class="tweet-date">March 1st, 2012</span>
-            <i class="icon-twitter"></i>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <hr class="span12 dotted" />
-      </div>
-    </article>
-    <!-- End Twitter Post -->
-
-    <!-- Start Blog Post -->
-    <article class="blog-post container">
-      <div class="row">
-        <div class="span9 offset3">
-          <h4>
-            <a href="blog-detail.html"
-              >Donec molestie, orci ac pharetra fermentum, ipsum quam commodo
-              arcu</a
-            >
-          </h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span3 post-info">
-          <div class="date">March 1st, 2012</div>
-          <div class="tags">
-            <a class="tag" href="#">digital</a>
-            <a class="tag" href="#">strategy</a>
-            <a class="tag" href="#">web</a>
-            <a class="tag" href="#">strategy</a>
-            <a class="tag" href="#">web</a>
-          </div>
-          <div class="comments"><i class="icon-comment"></i> 1 comment</div>
-          <div class="up-title hidden-phone">Share this:</div>
-          <img
-            src="img/share.png"
-            alt=""
-          /><!-- Change this image to your code of social buttons -->
-        </div>
-        <div class="span9">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est
-            lectus, mattis in sodales non, congue sollicitudin ante. Vestibulum
-            ut dolor mauris, sed venenatis est. Phasellus sodales placerat nisl,
-            ut lacinia enim tincidunt vel. Mauris tempor augue a sem condimentum
-            non ullamcorper libero rhoncus.
-          </p>
-          <p>
-            Donec molestie, orci ac pharetra fermentum, ipsum quam commodo arcu,
-            non fringilla nisl ipsum vel enim. Pellentesque sagittis sagittis
-            sem. Cras pharetra tempor felis interdum fringilla. Vivamus vitae
-            dolor non magna imperdiet dictum. Pellentesque rhoncus vulputate
-            felis, nec consequat risus tristique quis. Nullam libero erat,
-            gravida nec sollicitudin non, consectetur in mauris.
-          </p>
-          <p class="gray">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est
-            lectus, mattis in sodales non, congue sollicitudin ante. Vestibulum
-            ut dolor mauris, sed venenatis est. Phasellus sodales placerat nisl,
-            ut lacinia enim tincidunt vel. Mauris tempor augue a sem condimentum
-            non ullamcorper libero rhoncus.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <hr class="span12 dotted" />
-      </div>
-    </article>
-    <!-- End Blog Post -->
-
-    <!-- Start Blog Post -->
-    <article class="blog-post container">
-      <div class="row">
-        <div class="span9 offset3">
-          <h4>
-            <a href="blog-detail.html"
-              >Mauris sagittis vehicula augue et rhoncus. Pellentesque rhoncus
-              posuere nulla, sit amet euismod mi auctor quis.</a
-            >
-          </h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span3 post-info">
-          <div class="date">March 1st, 2012</div>
-          <div class="tags">
-            <a class="tag" href="#">digital</a>
-            <a class="tag" href="#">strategy</a>
-            <a class="tag" href="#">web</a>
-            <a class="tag" href="#">strategy</a>
-            <a class="tag" href="#">web</a>
-          </div>
-          <div class="comments"><i class="icon-comment"></i> 1 comment</div>
-          <div class="up-title hidden-phone">Share this:</div>
-          <img
-            src="img/share.png"
-            alt=""
-          /><!-- Change this image to your code of social buttons -->
-        </div>
-        <div class="span9">
-          <p>
-            Donec molestie, orci ac pharetra fermentum, ipsum quam commodo arcu,
-            non fringilla nisl ipsum vel enim. Pellentesque sagittis sagittis
-            sem. Cras pharetra tempor felis interdum fringilla. Vivamus vitae
-            dolor non magna imperdiet dictum. Pellentesque rhoncus vulputate
-            felis, nec consequat tristique quis. Nullam libero erat, gravida nec
-            sollicitudin non, consectetur in mauris.
-          </p>
-          <img src="img/blog/image3.jpg" alt="" />
-          <p class="gray">
-            Donec molestie, orci ac pharetra fermentum, ipsum quam commodo arcu,
-            non fringilla nisl ipsum vel enim. Pellentesque sagittis sagittis
-            sem. Cras pharetra tempor felis interdum fringilla. Vivamus vitae
-            dolor non magna imperdiet dictum. Pellentesque rhoncus vulputate
-            felis, nec consequat risus tristique quis. Nullam libero erat,
-            gravida nec sollicitudin non, consectetur in mauris.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est
-            lectus, mattis in sodales non, congue sollicitudin ante. Vestibulum
-            ut dolor mauris, sed venenatis est. Phasellus sodales placerat nisl,
-            ut lacinia enim tincidunt vel. Mauris tempor augue a sem condimentum
-            non ullamcorper libero rhoncus.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <hr class="span12 dotted" />
-      </div>
-    </article>
-    <!-- End Blog Post -->
-
-    <!-- Start Twitter Post -->
-    <article class="blog-post container scaleimg">
-      <div class="row">
-        <div class="span12">
-          <a href="#" class="twitter-post">
-            <span class="username">@username</span>
-            <p>
-              All the our new Support team members are sure rocking through the
-              tickets. I've never seen lower numbers. Well done everyone!
-            </p>
-            <span class="tweet-date">March 1st, 2012</span>
-            <i class="icon-twitter"></i>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <hr class="span12 dotted" />
-      </div>
-    </article>
-    <!-- End Twitter Post -->
-
-    <!-- Start Blog Post -->
-    <article class="blog-post container">
-      <div class="row">
-        <div class="span9 offset3">
-          <h4>
-            <a href="blog-detail.html"
-              >Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              Consectetur, adipisci velit...</a
-            >
-          </h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span3 post-info">
-          <div class="date">September 1st, 2012</div>
-          <div class="tags">
-            <a class="tag" href="#">digital</a>
-            <a class="tag" href="#">strategy</a>
-            <a class="tag" href="#">web</a>
-            <a class="tag" href="#">strategy</a>
-            <a class="tag" href="#">web</a>
-          </div>
-          <div class="comments"><i class="icon-comment"></i> 37 comments</div>
-          <div class="up-title hidden-phone">Share this:</div>
-          <img
-            src="img/share.png"
-            alt=""
-          /><!-- Change this image to your code of social buttons -->
-        </div>
-        <div class="span9">
-          <div class="preview-img">
-            <img src="img/slider/image1.jpg" alt="" />
-            <div class="img-caption">
-              <p>
-                Award winning digital agency. We bring a personal and effective
-                approach to every project we work on, which is why our clients
-                love us and why they keep coming back.
-              </p>
-            </div>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est
-            lectus, mattis in sodales non, congue sollicitudin ante. Vestibulum
-            ut dolor mauris, sed venenatis est. Phasellus sodales placerat nisl,
-            ut lacinia enim tincidunt vel. Mauris tempor augue a sem condimentum
-            non ullamcorper libero rhoncus.
-          </p>
-          <p>
-            Donec molestie, orci ac pharetra fermentum, ipsum quam commodo arcu,
-            non fringilla nisl ipsum vel enim. Pellentesque sagittis sagittis
-            sem. Cras pharetra tempor felis interdum fringilla. Vivamus vitae
-            dolor non magna imperdiet dictum. Pellentesque rhoncus vulputate
-            felis, nec consequat risus tristique quis. Nullam libero erat,
-            gravida nec sollicitudin non, consectetur in mauris.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est
-            lectus, mattis in sodales non, congue sollicitudin ante. Vestibulum
-            ut dolor mauris, sed venenatis est. Phasellus sodales placerat nisl,
-            ut lacinia enim tincidunt vel. Mauris tempor augue a sem condimentum
-            non ullamcorper libero rhoncus.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <hr class="span12 dotted" />
-      </div>
-    </article>
-    <!-- End Blog Post -->
-
-    <!-- Start Blog Post -->
-    <article class="blog-post container">
-      <div class="row">
-        <div class="span9 offset3">
-          <h4>
-            <a href="blog-detail.html"
-              >Our favorite London office. Many photos.</a
-            >
-          </h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span3 post-info">
-          <div class="date">March 1st, 2012</div>
-          <div class="tags">
-            <a class="tag" href="#">office</a>
-            <a class="tag" href="#">photos</a>
-            <a class="tag" href="#">london</a>
-          </div>
-          <div class="comments"><i class="icon-comment"></i> 12 comments</div>
-          <div class="up-title hidden-phone">Share this:</div>
-          <img
-            src="img/share.png"
-            alt=""
-          /><!-- Change this image to your code of social buttons -->
-        </div>
-        <div class="span9">
-          <div class="preview-img">
-            <img src="img/blog/slider/image3.jpg" alt="" />
-          </div>
-          <p>
-            Ut tempus, dui vitae auctor iaculis, tellus erat tempor justo, ut
-            ultrices ante nibh adipiscing risus. Sed nec mollis purus. Nunc in
-            lacinia justo. Aliquam pretium nibh eget urna elementum rhoncus. Sed
-            sit amet sem orci. Curabitur ipsum tellus, iaculis eget imperdiet
-            sed, pretium ultrices odio. Mauris augue nisl, imperdiet at viverra
-            at, porta nec felis. Etiam lacinia vulputate scelerisque.
-          </p>
-          <p>
-            Mauris sagittis vehicula augue et rhoncus. Pellentesque rhoncus
-            posuere nulla, sit amet euismod mi auctor quis. Vestibulum ante
-            ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-            Curae; Nulla facilisi. Nullam sodales nulla non est porttitor
-            tempus. Nulla facilisi. Praesent nisi nisi, mollis et consequat in,
-            feugiat ut metus.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <hr class="span12 dotted" />
-      </div>
-    </article>
-    <!-- End Blog Post -->
     <section id="social-data">
       <div class="container">
         <div class="row">
@@ -562,15 +194,7 @@
           <div class="span4"></div>
           <div class="span4">
             <h5>Nossa Localização</h5>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d348.54397930886523!2d-63.897425816352424!3d-8.755462257200094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1715283653168!5m2!1spt-BR!2sbr"
-              width="220"
-              height="170"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d348.54397930886523!2d-63.897425816352424!3d-8.755462257200094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1715283653168!5m2!1spt-BR!2sbr" width="220" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
