@@ -1088,7 +1088,6 @@
     position: relative;
 }
 
-
 /* ========================================================
    Project Page
 ======================================================== */
@@ -1410,48 +1409,6 @@ a.heart-circle:hover {
 	display: none;
 }
 
-
-
-/* ========================================================
-   Error 404 Page
-======================================================== */
-
-.error-page {
-	margin-top: 73px;
-	margin-bottom: 90px;
-	text-align: center;
-}
-.error-page h1 {
-	line-height: 1;
-	margin-bottom: 13px;
-}
-.error-page p {
-	font-size: 24px;
-}
-.error-page p a {
-	font-weight: 200;
-}
-.error-page hr {
-	margin-bottom: 30px;
-}
-.error-page .error-title {
-	font-size: 260px;
-	font-weight: bold;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: white;
-	letter-spacing: -4px;
-	line-height: 1;
-}
-.error-background {
-	position: absolute;
-	z-index: -1;
-	width: 100%;
-	height: 100%;
-	background: url(../img/countdown-bg.jpg) center -300px no-repeat;
-}
-
-
-
 /* ========================================================
    Icons Page (Optional)
 ======================================================== */
@@ -1485,8 +1442,8 @@ a.heart-circle:hover {
 }
 .the-icons li:hover [class^="icon-"],
 .the-icons li:hover [class*=" icon-"] {
-	*font-size: 24px;
-	*vertical-align: middle;
+	font-size: 24px;
+	vertical-align: middle;
 }
 .the-icons li:hover [class^="icon-"]:before,
 .the-icons li:hover [class*=" icon-"]:before {

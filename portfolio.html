@@ -1,121 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="utf-8" />
-  <title>Ferrari</title>
-  <!-- Import CSS -->
-  <link rel="stylesheet" href="css/base.css" />
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-  <style>
-    /* Estilo para o modal de vídeo */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 9999;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
+    <meta charset="utf-8">
+    <title>Ferrari</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    .modal-content {
-      margin: 10% auto;
-      padding: 20px;
-      background-color: #111; /* fundo escuro */
-      border: 1px solid #888;
-      width: 80%;
-    }
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/base.css">
 
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-    }
+    <!-- Hero Causel CSS -->
+    <link rel="stylesheet" href="css/jquery.heroCarousel.css">
 
-    .close:hover,
-    .close:focus {
-      color: black;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    /* Estilo para o contêiner do vídeo no modal */
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* proporção 16:9 para vídeos */
-      padding-top: 30px;
-      height: 0;
-      overflow: hidden;
-    }
-
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
+    <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
-<body>
-  <!-- Adicionando a estrutura do modal de vídeo -->
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="video-container">
-        <iframe id="videoFrame" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-
-  <!-- Adicionando a galeria de vídeos -->
-  <section id="projects" class="container">
-    <div id="posts" class="isotope row">
-      <!-- Adicionando os vídeos -->
-      <!-- Repita este bloco para cada vídeo -->
-      <div class="post item span4 isotope-item website">
-        <div class="project-wrp hover-down">
-          <div class="content-wrp">
-            <!-- Adicionando a imagem de visualização do vídeo -->            
-            <img src="img/video_preview_image.jpg" alt="Video Preview" class="video-preview" data-video-src="https://www.youtube.com/embed/iRsV6YpLsKA">
-            <!-- Adicionando o título e a descrição do vídeo -->
-            <p class="project-name">Nome do Vídeo</p>
-            <p class="project-desc">Descrição do Vídeo</p>
-          </div>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="span5">
+                <div id="logo">
+                    <a href="index.html"><img src="img/clients/logo1.png" alt="Logo da Ferrari"
+                            style="width: 75px; height: 50px;">Ferrari</a>
+                </div>
+            </div>
+            <div class="span7">
+                <!-- Start Navigation -->
+                <nav>
+                    <ul id="navigation" class="pull-right hidden-phone">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Historia</a>
+                        </li>
+                        <li>
+                            <a class="active"href="portfolio.html">Videos</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Navigation -->
+            </div>
         </div>
-      </div>
-      <!-- Fim do bloco do vídeo -->
     </div>
-  </section>
+</header>
 
-  <!-- Adicionando o script JavaScript -->
-  <script>
-    $(document).ready(function () {
-      // Função para abrir o modal de vídeo
-      $(".video-preview").on("click", function () {
-        var videoSrc = $(this).data("video-src");
-        $("#videoFrame").attr("src", videoSrc);
-        $("#myModal").css("display", "block");
-      });
+<body>
+    <div class="container">        
+        <div class="video-container">
+            <div class="video">
+                <video src="img/historyimgs/LaFerrari - Official video.mp4"></video>
+                <P>LaFerrari</P>
+            </div>
+            <div class="video">
+                <video src="img/historyimgs/The Ferrari Enzo WRC.mp4"></video>
+                <p>Ferrari Enzo</p>
+            </div>
+            <div class="video">
+                <video src="img/historyimgs/Welcome the Ferrari 12Cilindri.mp4"></video>
+                <p>Ferrari 12Cilíndros</p>
+            </div>
+            <div class="video">
+                <video src="img/historyimgs/Italian Dream - Ferrari F40   _4K_.mp4"></video>
+                <p>Ferrari F40</p>
+            </div>
+            <div class="video">
+                <video src="img/historyimgs/Ferrari 296 GTB_ defining fun to drive.mp4"></video>
+                <p>Ferrari 296GTB</p>
+            </div>
+            <div class="video">
+                <video src="img/historyimgs/Ferrari California T - Official video _ Video ufficiale.mp4">Ferrari
+                    California T</video>
+            </div>
+        </div>
+    </div>
+    <section id="social-data">
+        <div class="container">
+            <div class="row">
+                <div class="span4">
+                    <h5>Contato</h5>
+                    <address>
+                        <strong>Endereço:</strong> Rua: Brasilia - 2930, Porto Velho, RO<br>
+                        <strong>Telefone:</strong> +55 6999999999<br>
+                        <strong>E-mail:</strong> <a href="#">email@email.com</a>
+                    </address>
+                    <div class="follow">
+                        <p>Redes Sociais:</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><span><i class="icon-facebook"></i></span></a></li>
+                            <li><a href="#"><span><i class="icon-twitter"></i></span></a></li>
+                            <li><a href="#"><span><i class="icon-vimeo"></i></span></a></li>
+                            <li><a href="#"><span><i class="icon-pinterest"></i></span></a></li>
+                            <li><a href="#"><span><i class="icon-linkedin"></i></span></a></li>
+                        </ul>
+                    </div>
+                    <hr class="visible-phone">
+                </div>
+                <div class="span4"></div>
+                <div class="span4">
+                    <h5>Nossa Localização</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d348.54397930886523!2d-63.897425816352424!3d-8.755462257200094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1715283653168!5m2!1spt-BR!2sbr"
+                        width="220" height="170" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var video = document.querySelectorAll('video')
+        video.forEach(play => play.addEventListener('click', () => {
+            play.classList.toggle('active');
+            if (play.paused) {
+                play.play();
+            } else {
+                play.pause();
+                play.currentTime = 0;
+            }
+        }));
+    </script>
+    <footer class="container">
+        <div class="row">
+            <div class="span12">
+                <p>© 2024 <a href="index.html">Ferrari</a>. Powered by WordPress.<br>
+                    <span class="theme-author"><a href="http://themes.tvda.eu" target="_blank">Ferrari Template</a> by
+                        <a href="http://themes.tvda.eu" target="_blank">TVDA</a>.</span>
+                </p>
+                <!-- Start Footer Navigation -->
+                <nav class="hidden-phone">
+                    <ul class="pull-right">
+                        <li><a class="active" href="index.html">Home</a></li>
+                    </ul>
+                </nav>
+                <!-- End Footer Navigation -->
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
 
-      // Função para fechar o modal de vídeo
-      $(".close").on("click", function () {
-        $("#videoFrame").attr("src", "");
-        $("#myModal").css("display", "none");
-      });
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="js/jquery.easing-1.3.js"></script>
 
-      // Fechar o modal de vídeo quando clicar fora dele
-      $(window).on("click", function (event) {
-        if (event.target == $("#myModal")[0]) {
-          $("#videoFrame").attr("src", "");
-          $("#myModal").css("display", "none");
-        }
-      });
-    });
-  </script>
+    <!-- jQuery Hero Slider -->
+    <script src="js/hero/jquery.heroCarousel-1.3.js"></script>
+    <script>
+        $(function () {
+            if ($('.hero-carousel').length > 0) {
+                $('.hero-carousel').heroCarousel({
+                    easing: 'easeOutExpo',
+                    css3pieFix: true
+                });
+            }
+        });
+    </script>
+
+    <!-- Main JS Plugins -->
+    <script src="js/shortcodes.js"></script><!-- Shortcodes -->
+    <script src="js/main.js"></script><!-- Hovers -->
+    <script src="js/selectnav.min.js"></script><!-- Mobile Navigation -->
+    <script src="js/jquery.fancybox.pack.js"></script><!-- Fancybox -->
+    <script src="js/jquery.fancybox-media.js"></script><!-- Fancybox Media Helper -->
+    <script src="js/jquery.flexslider.js"></script><!-- Flexslider -->
+    <script src="js/twitter/jquery.tweet.js"></script><!-- Twitter Feed -->
+    <script src="js/twitter-options.js"></script><!-- Twitter Feed Options -->
+    <script src="js/jflickrfeed.js"></script><!-- Flickr Feed -->
+    <script src="js/jflickrfeed-setup.js"></script><!-- Flickr Feed Setup-->
+    <script src="js/settings.js"></script> <!-- Settings for JS Plugins -->
 </body>
+
 </html>
